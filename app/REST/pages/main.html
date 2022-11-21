@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{
+                margin:0;
+                display:flex;
+                flex-direction:column;
+                background-color: cadetblue;
+            }
+            .kek{
+                margin-top:2%;
+                background-color:chartreuse;
+                display:flex;
+                width:100%;
+                justify-content: center;
+            }
+            p{
+                display: flex;
+                justify-content: center;
+            }
+            form{
+                display: flex;
+                flex: 1;
+                align-items: center;
+                flex-direction:column;
+            }
+            footer{
+                display:flex;
+                flex:0;
+                justify-content: space-around;
+            }
+    </style>
+</head>
+<body>
+    <div class="kek">
+        <h1>Test</h1>
+    </div>
+    <p>Podaj swoje współrzędne</p>
+    <form>
+        <label for="CordX">CordX:</label>
+        <input type="number" id="CordX" name="CordX"><br>
+        <label for="CordY">CordY:</label>
+        <input type="number" id="CordY" name="CordY">
+        <br>
+        <label for="vehicle1"> Czy chcesz miejsce dla niepełnosprawnych?</label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle2"> Czy chcesz parking płatny?</label>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle3"> Czy chcesz parking strzeżony?</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Czy chcesz parking z przynajmniej 15 miejscami?</label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <footer>ANS Tarnów</footer>
+</body>
+</html>

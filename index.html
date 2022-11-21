@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+
+   <link rel="stylesheet" href="style.css">
+   <style>body, html {
+    height: 100%;
+    margin: 0;
+ }
+ 
+.background {
+    background-image: url("./bg.jpg");
+    height: 50%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text {
+    height: 50vh;
+    background-color: #e8dbdb;
+    font-size: 28px;
+    padding: 15px;
+}
+
+
+nav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 10px 5px 5px black;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0d0fbf;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+}
+
+.other {
+    background-color: #6c92e5;
+    padding: 15px;
+}
+
+.kontakt {
+    padding: 15px;
+}
+
+#ki {
+    height: 10vh;
+}</style>
+</head>
+<body>
+
+<nav>
+   <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="#przedmiot">Przedmiot</a></li>
+       <li><a href="#katedra">Katedra</a></li>
+       <li><a href="#kontakt">Kontakt</a></li>
+   </ul>
+</nav>
+
+<section id="home"></section>
+
+<div class="background"></div>
+
+<section id="przedmiot" class="text">
+    <h2><%=subject%></h2>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+    Lorem Ipsum.
+ </section>
+ 
+ <section id="katedra" class="other">
+    <div>
+        <img src="ki.jpg" alt="katedra" id="ki">
+    </div>
+ </section>
+ 
+ <div class="background"></div>
+ 
+ <section id="kontakt" class="kontakt">
+ 
+    <div>
+        Kontakt:
+        <ul>
+            <li>tel: 123 123 134</li>
+            <li>email: test@test.pl</li>
+            <li>skype: test</li>
+        </ul>
+    </div>
+ 
+ </section>
+ <footer>
+    <p class="copy">Copyrights &copy; | 2021</p>
+ </footer>
+ 
+ </body>
+ </html>
+ 
